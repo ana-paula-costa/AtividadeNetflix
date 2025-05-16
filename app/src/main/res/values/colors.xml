@@ -7,6 +7,7 @@
     <color name="primaria_variacao">#AA0407</color>
     <color name="secundaria">#f70000</color>
     <color name="fundo">#171417</color>
+    <color name="menu_navegacao">@color/white</color>
 
 
 </resources>

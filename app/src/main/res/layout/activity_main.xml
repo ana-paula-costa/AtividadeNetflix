@@ -8,10 +8,142 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="83dp"
-        android:layout_height="74dp"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="1dp" />
+        android:id="@+id/logo"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/series"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/linha_vertical_esquerda"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/filmes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filmes"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/series"
+        app:layout_constraintEnd_toStartOf="@+id/minha_lista"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/series"
+        app:layout_constraintTop_toTopOf="@+id/series" />
+
+    <TextView
+        android:id="@+id/minha_lista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minha Lista"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/filmes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/linha_vertical_direita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/filmes"
+        app:layout_constraintTop_toTopOf="@+id/filmes" />
+
+    <TextView
+        android:id="@+id/series"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Séries"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/logo"
+        app:layout_constraintEnd_toStartOf="@+id/filmes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="@+id/logo" />
+
+    <ImageView
+        android:id="@+id/logo_filme"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/linha_top2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top"
+        app:srcCompat="@drawable/logomovie" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10259918" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linha_top2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25171" />
+
+    <TextView
+        android:id="@+id/romance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Romance"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/epoca"
+        app:layout_constraintEnd_toStartOf="@+id/epoca"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/linha_vertical_esquerda"
+        app:layout_constraintTop_toTopOf="@+id/epoca" />
+
+    <TextView
+        android:id="@+id/epoca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Época"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/livro"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/romance"
+        app:layout_constraintTop_toTopOf="@+id/linha_top2" />
+
+    <TextView
+        android:id="@+id/livro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Livro"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/epoca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/linha_vertical_direita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/epoca"
+        app:layout_constraintTop_toTopOf="@+id/epoca"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linha_vertical_esquerda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linha_vertical_direita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <Button
+        android:id="@+id/assistir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assistir"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="298dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
