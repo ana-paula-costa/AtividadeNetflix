@@ -209,7 +209,7 @@
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="@id/linha_vertical_esquerda"
         app:layout_constraintTop_toBottomOf="@+id/lancamento"
-        app:srcCompat="@drawable/DuplaExplosiva" />
+        app:srcCompat="@drawable/duplaexplosiva2" />
 
     <ImageView
         android:id="@+id/filme2"
@@ -221,7 +221,7 @@
         app:layout_constraintStart_toEndOf="@+id/filme1"
         app:layout_constraintTop_toTopOf="@+id/filme1"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/TheBigBang" />
+        app:srcCompat="@drawable/thebigbang" />
 
     <ImageView
         android:id="@+id/filme3"
