@@ -86,6 +86,7 @@
         android:id="@+id/logo_filme"
         android:layout_width="300dp"
         android:layout_height="160dp"
+        android:layout_marginTop="100dp"
         app:layout_constraintBottom_toTopOf="@+id/linha_top2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
